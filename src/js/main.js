@@ -6,13 +6,16 @@ function sum() {
   if (isNaN(num1) && isNaN(num2)) {
     document.getElementById("result").textContent = "Please Input the Number";
   } else if (Number(num1) && isNaN(num2)) {
-    document.getElementById("result").textContent =
-      "Please Input the Second Number";
+    document.getElementById("result").textContent = "Please Input the Second Number";
   } else if (isNaN(num1) && Number(num2)) {
-    document.getElementById("result").textContent =
-      "Please Input the First Number";
+    document.getElementById("result").textContent = "Please Input the First Number";
   } else {
     document.getElementById("result").textContent = result;
   }
 }
 
+function clearInputs() {
+  document.getElementById("number1").value = "";
+  document.getElementById("number2").value = "";
+  document.getElementById("result").textContent = "";
+}
