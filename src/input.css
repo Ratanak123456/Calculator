@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.input-field:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px #3b82f64d;
+    outline: none;
+}
+
+.input-submit:hover {
+    background-color: #4f46e5;
+    transform: translateY(-1px);
+    box-shadow: inset 200px 0px #6c3bff;
+
+}
